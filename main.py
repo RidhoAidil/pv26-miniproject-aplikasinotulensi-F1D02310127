@@ -13,7 +13,7 @@ from database.db_manager import DatabaseManager
 
 def load_stylesheet(app: QApplication) -> None:
     """Memuat file QSS eksternal untuk styling aplikasi."""
-    qss_path = os.path.join(os.path.dirname(__file__), "assets", "style.qss")
+    qss_path = os.path.join(os.path.dirname(__file__), "style", "style.qss")
     if os.path.exists(qss_path):
         with open(qss_path, "r", encoding="utf-8") as f:
             app.setStyleSheet(f.read())
