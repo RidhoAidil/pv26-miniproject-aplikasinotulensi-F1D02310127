@@ -1,0 +1,481 @@
+/* ============================================================
+   assets/style.qss
+   Aplikasi Notulensi — External Stylesheet (QSS)
+   Tema: Deep Navy
+
+   Mahasiswa : Muhammad Ridho Aidil Furqon
+   NIM       : F1D02310127
+   ============================================================ */
+
+/* ── Global ─────────────────────────────────────────────────── */
+* {
+    font-family: "Segoe UI", "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
+    font-size: 13px;
+    color: #e2e8f0;
+}
+
+QMainWindow#MainWindow,
+QWidget {
+    background-color: #0f172a;
+}
+
+/* ── App Header ──────────────────────────────────────────────── */
+QFrame#AppHeader {
+    background-color: #1e293b;
+    border-bottom: 1px solid #334155;
+}
+
+QLabel#AppLogoLabel {
+    font-size: 17px;
+    font-weight: 700;
+    color: #60a5fa;
+    letter-spacing: 0.5px;
+}
+
+QLabel#IdentityLabel {
+    font-size: 11px;
+    color: #94a3b8;
+    font-style: italic;
+}
+
+/* ── Menu Bar ────────────────────────────────────────────────── */
+QMenuBar#AppMenuBar {
+    background-color: #1e293b;
+    color: #cbd5e1;
+    border-bottom: 1px solid #334155;
+    padding: 2px;
+}
+
+QMenuBar::item:selected {
+    background-color: #334155;
+    color: #60a5fa;
+    border-radius: 4px;
+}
+
+QMenu {
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 6px;
+    padding: 4px;
+}
+
+QMenu::item {
+    padding: 6px 20px;
+    border-radius: 4px;
+}
+
+QMenu::item:selected {
+    background-color: #3b82f6;
+    color: #ffffff;
+}
+
+/* ── Dashboard Strip ─────────────────────────────────────────── */
+QFrame#DashboardStrip {
+    background-color: #1e293b;
+    border-bottom: 1px solid #334155;
+}
+
+QFrame#StatCard {
+    background-color: #0f172a;
+    border: 1px solid #334155;
+    border-radius: 8px;
+    padding: 4px 8px;
+}
+
+QLabel#StatIcon {
+    font-size: 20px;
+}
+
+QLabel#StatValue {
+    font-size: 20px;
+    font-weight: 700;
+    color: #60a5fa;
+    line-height: 1;
+}
+
+QLabel#StatLabel {
+    font-size: 10px;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* ── Splitter ────────────────────────────────────────────────── */
+QSplitter#MainSplitter::handle {
+    background-color: #334155;
+    width: 1px;
+}
+
+/* ── Left Panel ──────────────────────────────────────────────── */
+QFrame#LeftPanel {
+    background-color: #1e293b;
+    border-right: 1px solid #334155;
+}
+
+QFrame#ListToolbar {
+    background-color: #1e293b;
+    border-bottom: 1px solid #334155;
+}
+
+QLineEdit#SearchInput {
+    background-color: #0f172a;
+    border: 1px solid #334155;
+    border-radius: 6px;
+    padding: 7px 12px;
+    color: #e2e8f0;
+    selection-background-color: #3b82f6;
+}
+
+QLineEdit#SearchInput:focus {
+    border-color: #3b82f6;
+}
+
+QListWidget#MeetingList {
+    background-color: #1e293b;
+    border: none;
+    outline: none;
+    padding: 4px;
+}
+
+QListWidget#MeetingList::item {
+    background-color: #1e293b;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    padding: 8px 6px;
+    margin: 2px 0;
+    color: #cbd5e1;
+    line-height: 1.5;
+}
+
+QListWidget#MeetingList::item:hover {
+    background-color: #273549;
+    border-color: #334155;
+}
+
+QListWidget#MeetingList::item:selected {
+    background-color: #1d4ed8;
+    border-color: #3b82f6;
+    color: #ffffff;
+}
+
+QFrame#ListActionBar {
+    background-color: #1e293b;
+    border-top: 1px solid #334155;
+}
+
+/* ── Detail Panel ────────────────────────────────────────────── */
+QWidget#DetailPanel {
+    background-color: #0f172a;
+}
+
+QLabel#PlaceholderLabel {
+    color: #475569;
+    font-size: 15px;
+    font-style: italic;
+    line-height: 2;
+}
+
+QFrame#DetailHeader {
+    background-color: #1e293b;
+    border-bottom: 1px solid #334155;
+}
+
+QLabel#DetailTitle {
+    font-size: 18px;
+    font-weight: 700;
+    color: #f1f5f9;
+}
+
+QLabel#MetaLabel {
+    font-size: 12px;
+    color: #94a3b8;
+}
+
+QScrollArea#DetailScroll {
+    background-color: transparent;
+}
+
+QFrame#NoteSection {
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 8px;
+}
+
+QLabel#NoteSectionHead {
+    font-size: 12px;
+    font-weight: 700;
+    color: #60a5fa;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+QLabel#NoteSectionBody {
+    color: #cbd5e1;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+/* ── Task Table Header Area ──────────────────────────────────── */
+QFrame#TaskTableHeader {
+    background-color: #1e293b;
+    border-top: 1px solid #334155;
+    border-bottom: 1px solid #334155;
+}
+
+QLabel#SectionLabel {
+    font-size: 13px;
+    font-weight: 700;
+    color: #60a5fa;
+}
+
+/* ── Table ───────────────────────────────────────────────────── */
+QTableWidget#TaskTable {
+    background-color: #0f172a;
+    alternate-background-color: #111827;
+    border: none;
+    gridline-color: #1e293b;
+    color: #cbd5e1;
+    selection-background-color: #1d4ed8;
+    outline: none;
+}
+
+QTableWidget#TaskTable QHeaderView::section {
+    background-color: #1e293b;
+    color: #94a3b8;
+    font-weight: 700;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 8px 10px;
+    border: none;
+    border-right: 1px solid #334155;
+    border-bottom: 1px solid #334155;
+}
+
+/* ── Dialog ──────────────────────────────────────────────────── */
+QDialog#MeetingDialog {
+    background-color: #0f172a;
+}
+
+QFrame#DialogHeader {
+    background-color: #1e293b;
+    border-bottom: 1px solid #334155;
+    padding: 16px 24px;
+}
+
+QLabel#DialogTitle {
+    font-size: 16px;
+    font-weight: 700;
+    color: #60a5fa;
+}
+
+QWidget#DialogFormWidget {
+    background-color: #0f172a;
+}
+
+QFrame#DialogFooter {
+    background-color: #1e293b;
+    border-top: 1px solid #334155;
+}
+
+/* Form fields inside dialog */
+QLineEdit#FormInput,
+QDateEdit#FormInput,
+QTimeEdit#FormInput,
+QComboBox#FormInput {
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 6px;
+    padding: 8px 12px;
+    color: #e2e8f0;
+    selection-background-color: #3b82f6;
+}
+
+QLineEdit#FormInput:focus,
+QDateEdit#FormInput:focus,
+QTimeEdit#FormInput:focus,
+QComboBox#FormInput:focus {
+    border-color: #3b82f6;
+    background-color: #1e3a5f;
+}
+
+QTextEdit#FormTextArea {
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 6px;
+    padding: 8px;
+    color: #e2e8f0;
+}
+
+QTextEdit#FormTextArea:focus {
+    border-color: #3b82f6;
+}
+
+QDateEdit#FormInput::drop-down,
+QTimeEdit#FormInput::drop-down,
+QComboBox#FormInput::drop-down {
+    border: none;
+    width: 20px;
+}
+
+QCalendarWidget {
+    background-color: #1e293b;
+    color: #e2e8f0;
+}
+
+QCalendarWidget QToolButton {
+    color: #60a5fa;
+}
+
+QComboBox QAbstractItemView {
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    selection-background-color: #3b82f6;
+    color: #e2e8f0;
+}
+
+/* ── Buttons ─────────────────────────────────────────────────── */
+QPushButton#BtnPrimary {
+    background-color: #3b82f6;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 18px;
+    font-weight: 600;
+}
+
+QPushButton#BtnPrimary:hover {
+    background-color: #2563eb;
+}
+
+QPushButton#BtnPrimary:pressed {
+    background-color: #1d4ed8;
+}
+
+QPushButton#BtnPrimary:disabled {
+    background-color: #1e3a5f;
+    color: #475569;
+}
+
+QPushButton#BtnSecondary {
+    background-color: transparent;
+    color: #94a3b8;
+    border: 1px solid #334155;
+    border-radius: 6px;
+    padding: 8px 18px;
+    font-weight: 600;
+}
+
+QPushButton#BtnSecondary:hover {
+    background-color: #1e293b;
+    color: #e2e8f0;
+    border-color: #475569;
+}
+
+QPushButton#BtnDanger {
+    background-color: transparent;
+    color: #f87171;
+    border: 1px solid #f87171;
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-weight: 600;
+}
+
+QPushButton#BtnDanger:hover {
+    background-color: #7f1d1d;
+    color: #ffffff;
+}
+
+QPushButton#BtnToggle {
+    background-color: transparent;
+    color: #22c55e;
+    border: 1px solid #22c55e;
+    border-radius: 4px;
+    padding: 4px;
+    font-weight: 700;
+}
+
+QPushButton#BtnToggle:hover {
+    background-color: #14532d;
+}
+
+QPushButton#BtnEdit {
+    background-color: transparent;
+    color: #facc15;
+    border: 1px solid #facc15;
+    border-radius: 4px;
+    padding: 4px;
+}
+
+QPushButton#BtnEdit:hover {
+    background-color: #713f12;
+}
+
+/* ── Status Bar ──────────────────────────────────────────────── */
+QStatusBar#AppStatusBar {
+    background-color: #1e293b;
+    color: #64748b;
+    border-top: 1px solid #334155;
+    font-size: 11px;
+    padding: 2px 12px;
+}
+
+/* ── Scroll Bars ─────────────────────────────────────────────── */
+QScrollBar:vertical {
+    background-color: #0f172a;
+    width: 8px;
+    border-radius: 4px;
+}
+
+QScrollBar::handle:vertical {
+    background-color: #334155;
+    border-radius: 4px;
+    min-height: 30px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background-color: #475569;
+}
+
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+    height: 0;
+}
+
+QScrollBar:horizontal {
+    background-color: #0f172a;
+    height: 8px;
+    border-radius: 4px;
+}
+
+QScrollBar::handle:horizontal {
+    background-color: #334155;
+    border-radius: 4px;
+}
+
+/* ── Form Labels (dalam QFormLayout) ─────────────────────────── */
+QFormLayout QLabel {
+    color: #94a3b8;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* ── QMessageBox ─────────────────────────────────────────────── */
+QMessageBox {
+    background-color: #1e293b;
+    color: #e2e8f0;
+}
+
+QMessageBox QPushButton {
+    background-color: #3b82f6;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 16px;
+    min-width: 70px;
+    font-weight: 600;
+}
+
+QMessageBox QPushButton:hover {
+    background-color: #2563eb;
+}
