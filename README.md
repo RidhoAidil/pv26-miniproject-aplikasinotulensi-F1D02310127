@@ -44,7 +44,7 @@ Aplikasi Notulensi/
 ├── main.py                        # Entry point
 │
 ├── database/
-│   └── db_manager.py                # Layer Model: semua operasi SQLite
+│   └── db_manager.py              # Layer Model: semua operasi SQLite
 │
 ├── logic/
 │   ├── meeting_controller.py      # Layer Controller: logika bisnis notulensi
