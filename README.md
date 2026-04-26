@@ -1,4 +1,4 @@
-# 📋 Smart Meeting Notes
+# 📋 Aplikasi Notulensi
 
 > Aplikasi notulensi rapat terstruktur dan profesional berbasis PySide6
 
@@ -6,7 +6,7 @@
 
 ## 📌 Deskripsi
 
-**Smart Meeting Notes** adalah aplikasi GUI desktop yang membantu mencatat hasil rapat secara terstruktur, lengkap dengan manajemen tugas tindak lanjut (*to-do* dari hasil rapat), pencarian, ringkasan statistik, dan fitur ekspor ke PDF/TXT.
+**Aplikasi Notulensi** adalah aplikasi GUI desktop yang membantu mencatat hasil rapat secara terstruktur, lengkap dengan manajemen tugas tindak lanjut (*to-do* dari hasil rapat), pencarian, ringkasan statistik, dan fitur ekspor ke PDF/TXT.
 
 Aplikasi ini dibangun sebagai Mini Project Mata Kuliah **Pemrograman Visual** dengan menerapkan prinsip **Separation of Concerns (SoC)**.
 
@@ -39,27 +39,25 @@ Aplikasi ini dibangun sebagai Mini Project Mata Kuliah **Pemrograman Visual** de
 ## 🗂️ Struktur Project (SoC)
 
 ```
-smart_meeting_notes/
+Aplikasi Notulensi/
 │
 ├── main.py                        # Entry point
 │
-├── models/
-│   └── database.py                # Layer Model: semua operasi SQLite
+├── database/
+│   └── db_manager.py                # Layer Model: semua operasi SQLite
 │
-├── controllers/
+├── logic/
 │   ├── meeting_controller.py      # Layer Controller: logika bisnis notulensi
 │   └── task_controller.py         # Layer Controller: logika bisnis tugas
+|   └── exporter.py                # Utilitas ekspor PDF & TXT
 │
-├── views/
+├── ui/
 │   ├── main_window.py             # Jendela utama (Layer View)
 │   ├── detail_panel.py            # Panel detail notulensi + tugas
 │   ├── meeting_dialog.py          # Dialog tambah/edit notulensi
 │   └── task_dialog.py             # Dialog tambah/edit tugas
 │
-├── utils/
-│   └── exporter.py                # Utilitas ekspor PDF & TXT
-│
-├── assets/
+├── style/
 │   └── style.qss                  # Stylesheet QSS eksternal
 │
 ├── meeting_notes.db               # Database SQLite (dibuat otomatis)
@@ -107,7 +105,7 @@ pip install PySide6
 
 ### Jalankan Aplikasi
 ```bash
-cd smart_meeting_notes
+cd Aplikasi Notulensi
 python main.py
 ```
 
@@ -126,5 +124,4 @@ python main.py
 
 ## 📎 Link
 
-- 🔗 **GitHub**: *(link repository ini)*
 - 🎬 **YouTube**: *(link video demo)*
