@@ -124,4 +124,4 @@ python main.py
 
 ## 📎 Link
 
-- 🎬 **YouTube**: *(link video demo)*
+- 🎬 **YouTube**:
